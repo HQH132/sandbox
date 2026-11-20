@@ -1,0 +1,59 @@
+{
+  "accountId": "alice",
+  "me": {
+    "uid": "2001",
+    "screen_name": "Alice在深圳",
+    "description": "在深圳上班的普通人",
+    "followers_count": 312,
+    "friends_count": 205
+  },
+  "statuses": [
+    {
+      "idstr": "5200000000000101",
+      "uid": "2001",
+      "created_at": "2026-11-16T19:30:00+08:00",
+      "text": "周末爬了梧桐山，好汉坡真的名不虚传，下山腿还在抖。",
+      "reposts_count": 1,
+      "comments_count": 2,
+      "attitudes_count": 23,
+      "featured": false
+    },
+    {
+      "idstr": "5200000000000102",
+      "uid": "2001",
+      "created_at": "2026-11-17T12:40:00+08:00",
+      "text": "公司楼下新开的咖啡店，燕麦拿铁 18 块，味道还行。",
+      "reposts_count": 0,
+      "comments_count": 0,
+      "attitudes_count": 7,
+      "featured": false
+    },
+    {
+      "idstr": "5200000000000103",
+      "uid": "1004",
+      "created_at": "2026-11-18T08:50:00+08:00",
+      "text": "@Alice在深圳 周日早上一起去深圳湾跑个 10 公里？",
+      "reposts_count": 0,
+      "comments_count": 0,
+      "attitudes_count": 1,
+      "featured": false
+    }
+  ],
+  "comments": [
+    {
+      "idstr": "4900000000000101",
+      "status_id": "5200000000000101",
+      "uid": "1004",
+      "created_at": "2026-11-16T20:00:00+08:00",
+      "text": "好汉坡下次带上我"
+    },
+    {
+      "idstr": "4900000000000102",
+      "status_id": "5200000000000101",
+      "uid": "1007",
+      "created_at": "2026-11-16T21:15:00+08:00",
+      "text": "山顶风大吗？"
+    }
+  ],
+  "attitudes": []
+}

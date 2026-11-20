@@ -28,6 +28,7 @@ from starlette.routing import Mount, Route
 
 from sandbox.config import load_local_env
 from sandbox.domains.mcd import McDelivery
+from sandbox.domains.weibo import Weibo
 from sandbox.episodes import Domain, EpisodeConflict, EpisodeStore, Fault, HTTP_FAULTS
 
 log = logging.getLogger(__name__)
@@ -60,7 +61,7 @@ def create_app(*, admin_token: str | None = None, domains: list[Domain] | None =
     admin_token = admin_token if admin_token is not None else os.environ.get("SANDBOX_ADMIN_TOKEN", "")
     if not admin_token or not admin_token.isascii() or any(not 33 <= ord(char) <= 126 for char in admin_token):
         raise ValueError("set SANDBOX_ADMIN_TOKEN to a nonempty ASCII bearer token")
-    registry = {domain.name: domain for domain in (domains if domains is not None else [McDelivery()])}
+    registry = {domain.name: domain for domain in (domains if domains is not None else [McDelivery(), Weibo()])}
     store = EpisodeStore(archive_dir)
     server = Server("sandbox")
 

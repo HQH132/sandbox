@@ -1,0 +1,334 @@
+[
+  {
+    "name": "search_hot_word_biz",
+    "description": "获取微博热搜榜（开放接口热搜词）。返回排名、热搜词、热度值和标签。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer",
+          "description": "返回条数，1-50，默认 50",
+          "minimum": 1,
+          "maximum": 50
+        }
+      },
+      "required": []
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "search_hot_word_cate_biz",
+    "description": "获取指定分类的微博热搜词。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "热搜分类，例如 社会、科技、娱乐、体育、财经"
+        },
+        "count": {
+          "type": "integer",
+          "description": "返回条数，1-50，默认 20",
+          "minimum": 1,
+          "maximum": 50
+        }
+      },
+      "required": [
+        "category"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "search_statuses_limited",
+    "description": "搜索含某关键词的微博。sort=hot 时只返回精选微博。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "q": {
+          "type": "string",
+          "description": "搜索关键词"
+        },
+        "type": {
+          "type": "integer",
+          "description": "搜索类型，查询微博传 1"
+        },
+        "sort": {
+          "type": "string",
+          "enum": [
+            "time",
+            "hot",
+            "fwnum",
+            "cmtnum"
+          ],
+          "description": "time：时间倒序（默认）；hot：热门精选；fwnum：转发数倒序；cmtnum：评论数倒序"
+        },
+        "count": {
+          "type": "integer",
+          "description": "每页条数，1-50，默认 10",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "page": {
+          "type": "integer",
+          "description": "页码，从 1 开始，默认 1",
+          "minimum": 1
+        },
+        "starttime": {
+          "type": "integer",
+          "description": "起始时间，秒级时间戳"
+        },
+        "endtime": {
+          "type": "integer",
+          "description": "结束时间，秒级时间戳"
+        }
+      },
+      "required": [
+        "q"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "users_show_biz",
+    "description": "获取当前授权用户的资料。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "statuses_user_timeline_biz",
+    "description": "获取当前授权用户自己发布的微博，时间倒序。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer",
+          "description": "每页条数，1-50，默认 10",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "page": {
+          "type": "integer",
+          "description": "页码，从 1 开始，默认 1",
+          "minimum": 1
+        }
+      },
+      "required": []
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "statuses_mentions_biz",
+    "description": "获取 @ 当前授权用户的微博，时间倒序。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer",
+          "description": "每页条数，1-50，默认 10",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "page": {
+          "type": "integer",
+          "description": "页码，从 1 开始，默认 1",
+          "minimum": 1
+        }
+      },
+      "required": []
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "comments_show_biz",
+    "description": "获取某条微博的评论列表，时间倒序。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "微博 ID（idstr）"
+        },
+        "count": {
+          "type": "integer",
+          "description": "每页条数，1-50，默认 10",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "page": {
+          "type": "integer",
+          "description": "页码，从 1 开始，默认 1",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "statuses_update",
+    "description": "以当前授权用户身份发布一条微博。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "微博正文，不超过 2000 字"
+        }
+      },
+      "required": [
+        "status"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "statuses_repost",
+    "description": "转发一条微博，可附带转发语。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "微博 ID（idstr）"
+        },
+        "status": {
+          "type": "string",
+          "description": "转发语，可选，不超过 2000 字"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "statuses_destroy",
+    "description": "删除当前授权用户自己发布的一条微博。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "微博 ID（idstr）"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true
+    }
+  },
+  {
+    "name": "comments_create",
+    "description": "评论一条微博。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "微博 ID（idstr）"
+        },
+        "comment": {
+          "type": "string",
+          "description": "评论内容，不超过 140 字"
+        }
+      },
+      "required": [
+        "id",
+        "comment"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "comments_reply",
+    "description": "回复某条微博下的一条评论。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "微博 ID（idstr）"
+        },
+        "cid": {
+          "type": "string",
+          "description": "被回复的评论 ID（idstr）"
+        },
+        "comment": {
+          "type": "string",
+          "description": "回复内容，不超过 140 字"
+        }
+      },
+      "required": [
+        "id",
+        "cid",
+        "comment"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "attitudes_create",
+    "description": "给一条微博点赞。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "微博 ID（idstr）"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": false
+    }
+  }
+]

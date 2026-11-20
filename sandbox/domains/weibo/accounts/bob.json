@@ -1,0 +1,13 @@
+{
+  "accountId": "bob",
+  "me": {
+    "uid": "2002",
+    "screen_name": "Bob_新号",
+    "description": "",
+    "followers_count": 0,
+    "friends_count": 3
+  },
+  "statuses": [],
+  "comments": [],
+  "attitudes": []
+}

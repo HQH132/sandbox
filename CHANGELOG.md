@@ -14,6 +14,7 @@
 - Separate the world fixture from account fixtures and open episodes with `scene` + `account`.
 - Run a local regression suite with a fresh Iris process per scenario and export batch and dialogue summaries.
 - Load local Sandbox, Runner, and Monitor settings from a shared `.env` template.
+- Add a synthetic Weibo MCP domain with 13 tools, a `daily` scene, `alice` and `bob` accounts, and four business faults.
 
 ### Changed
 

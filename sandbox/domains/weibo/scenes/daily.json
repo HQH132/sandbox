@@ -1,0 +1,292 @@
+{
+  "sceneId": "daily",
+  "clock": "2026-11-18T10:00:00+08:00",
+  "hotCategories": [
+    "社会",
+    "科技",
+    "娱乐",
+    "体育",
+    "财经"
+  ],
+  "users": [
+    {
+      "uid": "1001",
+      "screen_name": "深圳天气通",
+      "description": "深圳本地天气资讯",
+      "followers_count": 820000,
+      "friends_count": 120
+    },
+    {
+      "uid": "1002",
+      "screen_name": "科技小站K",
+      "description": "关注 AI 与硬件",
+      "followers_count": 356000,
+      "friends_count": 410
+    },
+    {
+      "uid": "1003",
+      "screen_name": "城市快递观察",
+      "description": "物流行业观察",
+      "followers_count": 98000,
+      "friends_count": 230
+    },
+    {
+      "uid": "1004",
+      "screen_name": "跑步的阿杰",
+      "description": "业余马拉松爱好者",
+      "followers_count": 5600,
+      "friends_count": 310
+    },
+    {
+      "uid": "1005",
+      "screen_name": "影评人小麦",
+      "description": "只聊电影",
+      "followers_count": 143000,
+      "friends_count": 88
+    },
+    {
+      "uid": "1006",
+      "screen_name": "新能源车评",
+      "description": "电动车实测",
+      "followers_count": 211000,
+      "friends_count": 150
+    },
+    {
+      "uid": "1007",
+      "screen_name": "南山生活圈",
+      "description": "南山区吃喝玩乐",
+      "followers_count": 67000,
+      "friends_count": 500
+    }
+  ],
+  "statuses": [
+    {
+      "idstr": "5200000000000001",
+      "uid": "1001",
+      "created_at": "2026-11-18T08:30:00+08:00",
+      "text": "【深圳本周天气提示】受新一股冷空气影响，深圳将从周四夜间开始明显降温，周五早晨最低气温预计降到 11 到 13 度，北部和西部局地可能更低。白天以多云为主，体感会比前几天凉不少，早晚通勤的朋友记得添一件外套。周五到周六东北风加大，沿海和高处阵风可达 6 到 7 级，出海和登山请注意安全，梧桐山、七娘山等热门线路早上风大，不建议清晨冲顶。空气偏干，相对湿度在 40% 左右，注意补水和皮肤保湿。周日起气温逐步回升，下周初最高气温回到 24 度上下。本次降温过程对农业影响不大，但对老人和儿童来说早晚温差较大，建议适当调整作息，避免在清晨和深夜长时间待在户外。学校和幼儿园如有晨跑、户外升旗等安排，可以视情况推迟或改在室内进行。有晨练习惯的朋友，可以把时间挪到 9 点以后，热身时间也适当延长。另外提醒：降温期间用电取暖要注意安全，不要在取暖器上烘烤衣物，离家前记得断电，老旧小区的电线负荷有限，避免多个大功率电器同时使用。家里有慢性病患者的，备好常用药，出现胸闷、气短等不适及时就医。我们会持续跟踪冷空气的路径，如果预报有调整，会第一时间更新。最后，周末想出门的朋友，周六下午到周日是比较好的窗口期，阳光充足、风力减弱，适合去海边或公园走走，但仍建议带一件薄外套。",
+      "reposts_count": 1520,
+      "comments_count": 864,
+      "attitudes_count": 9300,
+      "featured": true
+    },
+    {
+      "idstr": "5200000000000002",
+      "uid": "1001",
+      "created_at": "2026-11-17T18:05:00+08:00",
+      "text": "冷空气预警：深圳明后两天降温 8 到 10 度，大家注意保暖。#深圳降温#",
+      "reposts_count": 830,
+      "comments_count": 402,
+      "attitudes_count": 5120,
+      "featured": true
+    },
+    {
+      "idstr": "5200000000000003",
+      "uid": "1007",
+      "created_at": "2026-11-18T09:12:00+08:00",
+      "text": "降温了，南山几家糖水铺的姜撞奶排起了长队，你们最爱哪家？#深圳降温#",
+      "reposts_count": 45,
+      "comments_count": 230,
+      "attitudes_count": 1800,
+      "featured": false
+    },
+    {
+      "idstr": "5200000000000004",
+      "uid": "1002",
+      "created_at": "2026-11-18T07:40:00+08:00",
+      "text": "某开源大模型发布新版本，长上下文和工具调用都有提升，实测写代码比上一版稳定。#大模型#",
+      "reposts_count": 960,
+      "comments_count": 512,
+      "attitudes_count": 6100,
+      "featured": true
+    },
+    {
+      "idstr": "5200000000000005",
+      "uid": "1002",
+      "created_at": "2026-11-17T21:20:00+08:00",
+      "text": "端侧 4B 小模型跑在手机上，速度能接受，但多步任务还是容易出错。#大模型#",
+      "reposts_count": 120,
+      "comments_count": 98,
+      "attitudes_count": 930,
+      "featured": false
+    },
+    {
+      "idstr": "5200000000000006",
+      "uid": "1003",
+      "created_at": "2026-11-18T09:45:00+08:00",
+      "text": "双十一后第一周，部分快递网点仍有积压，偏远地区可能延误 2 到 3 天。#双十一快递#",
+      "reposts_count": 310,
+      "comments_count": 270,
+      "attitudes_count": 2400,
+      "featured": true
+    },
+    {
+      "idstr": "5200000000000007",
+      "uid": "1003",
+      "created_at": "2026-11-16T15:00:00+08:00",
+      "text": "快递柜超时收费又被吐槽了，你们小区的柜子多久开始收费？",
+      "reposts_count": 66,
+      "comments_count": 340,
+      "attitudes_count": 780,
+      "featured": false
+    },
+    {
+      "idstr": "5200000000000008",
+      "uid": "1004",
+      "created_at": "2026-11-17T20:10:00+08:00",
+      "text": "深圳马拉松还有不到三周，最后一次长距离拉练完成，32 公里配速 5 分 40。#深圳马拉松#",
+      "reposts_count": 12,
+      "comments_count": 35,
+      "attitudes_count": 260,
+      "featured": false
+    },
+    {
+      "idstr": "5200000000000009",
+      "uid": "1005",
+      "created_at": "2026-11-18T00:30:00+08:00",
+      "text": "《星河回声》首映场看完了，前半段节奏慢，后半段的配乐和长镜头很值回票价。#星河回声#",
+      "reposts_count": 440,
+      "comments_count": 690,
+      "attitudes_count": 7700,
+      "featured": true
+    },
+    {
+      "idstr": "5200000000000010",
+      "uid": "1006",
+      "created_at": "2026-11-17T11:00:00+08:00",
+      "text": "降温对电动车续航影响实测：同一路线，12 度比 25 度少跑了大约 15%。#深圳降温#",
+      "reposts_count": 210,
+      "comments_count": 188,
+      "attitudes_count": 1650,
+      "featured": false
+    },
+    {
+      "idstr": "5200000000000011",
+      "uid": "1007",
+      "created_at": "2026-11-15T12:00:00+08:00",
+      "text": "地铁新线试运行，南山到前海又多了一条通勤选择。",
+      "reposts_count": 88,
+      "comments_count": 76,
+      "attitudes_count": 900,
+      "featured": false
+    },
+    {
+      "idstr": "5200000000000012",
+      "uid": "1005",
+      "created_at": "2026-11-16T22:00:00+08:00",
+      "text": "年末片单盘点：这个月值得进影院的三部电影。#星河回声#",
+      "reposts_count": 150,
+      "comments_count": 60,
+      "attitudes_count": 1200,
+      "featured": false
+    }
+  ],
+  "comments": [
+    {
+      "idstr": "4900000000000001",
+      "status_id": "5200000000000002",
+      "uid": "1007",
+      "created_at": "2026-11-17T18:20:00+08:00",
+      "text": "终于有点冬天的感觉了"
+    },
+    {
+      "idstr": "4900000000000002",
+      "status_id": "5200000000000004",
+      "uid": "1006",
+      "created_at": "2026-11-18T08:00:00+08:00",
+      "text": "工具调用这块有对比数据吗？"
+    }
+  ],
+  "hotWords": [
+    {
+      "word": "深圳降温",
+      "num": 4826310,
+      "category": "社会",
+      "label": "沸"
+    },
+    {
+      "word": "星河回声首映",
+      "num": 3510022,
+      "category": "娱乐",
+      "label": "热"
+    },
+    {
+      "word": "开源大模型新版本",
+      "num": 2984410,
+      "category": "科技",
+      "label": "热"
+    },
+    {
+      "word": "双十一快递延误",
+      "num": 2210078,
+      "category": "社会",
+      "label": ""
+    },
+    {
+      "word": "深圳马拉松倒计时",
+      "num": 1789003,
+      "category": "体育",
+      "label": "新"
+    },
+    {
+      "word": "电动车冬季续航",
+      "num": 1520336,
+      "category": "科技",
+      "label": ""
+    },
+    {
+      "word": "年末消费数据",
+      "num": 1302200,
+      "category": "财经",
+      "label": ""
+    },
+    {
+      "word": "快递柜超时收费",
+      "num": 1188450,
+      "category": "社会",
+      "label": ""
+    },
+    {
+      "word": "某球队客场三连胜",
+      "num": 1033201,
+      "category": "体育",
+      "label": ""
+    },
+    {
+      "word": "端侧小模型",
+      "num": 960112,
+      "category": "科技",
+      "label": "新"
+    },
+    {
+      "word": "地铁新线试运行",
+      "num": 902330,
+      "category": "社会",
+      "label": ""
+    },
+    {
+      "word": "年终奖调查",
+      "num": 870045,
+      "category": "财经",
+      "label": ""
+    },
+    {
+      "word": "冬季养生糖水",
+      "num": 650778,
+      "category": "社会",
+      "label": ""
+    },
+    {
+      "word": "年末片单",
+      "num": 610340,
+      "category": "娱乐",
+      "label": ""
+    },
+    {
+      "word": "基金年末调仓",
+      "num": 580220,
+      "category": "财经",
+      "label": ""
+    }
+  ]
+}
